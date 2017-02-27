@@ -34,7 +34,7 @@ void printPriorityQ(priority_queue<pair<int,int>,vector<pair<int,int>>,greater<p
 class Solution {
 public:
     int add(vector<pair<int, int>>& bigballoons, int prev_index,const pair<int, int>& newballoon) {
-        for(vector<pair<int, int>>::iterator i=bigballoons.begin()+prev_index;i!=bigballoons.end();i++){
+        for(auto i = bigballoons.begin()+prev_index; i!= bigballoons.end(); i++){
             if(newballoon.first > i->second )
                 continue;
             if(newballoon.second < i->first) {//insert at i
@@ -53,13 +53,11 @@ public:
             return (int)points.size();
         std::sort(points.begin(), points.end(), less_than_start());
         vector<pair<int,int>> bigballoons;
-        //vector<pair<int,int>>::iterator it = bigballoons.begin();
-        int prev_index=0;
-        vector<pair<int, int>>::iterator pt = points.begin();
+        int prev_index = 0;
+        auto pt = points.begin();
         bigballoons.insert(bigballoons.begin(), *pt);
         pt++;
         do{
-            //cout <<  "# " << pt->first << "," << pt->second << endl;
             prev_index = add(bigballoons,prev_index,*pt);
             pt++;
             printVector(bigballoons);
