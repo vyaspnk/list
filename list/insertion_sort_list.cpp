@@ -17,7 +17,7 @@ void swap(int &a, int &b){
 class Solution {
 public:
     ListNode * InsertNodeInList(ListNode *head, ListNode *end,ListNode *tmp) {
-        ListNode *prev = NULL;
+        auto *prev = nullptr;
         ListNode *curr = head;
         while(curr!=end){
             if(curr->val >= tmp->val){

@@ -23,15 +23,16 @@ public:
         if(intervals.size()==0)
             return true;
         std::sort(intervals.begin(),intervals.end(),less_than_start());
-        for(vector<Interval>::iterator mt = intervals.begin(); (mt+1)!=intervals.end();mt++){
+        for(auto mt = intervals.begin(); (mt+1)!=intervals.end();mt++){
             if(mt->end > (mt+1)->start)
                 return false;
         }
         return true;
     }
 };
-vector<Interval> intervals(3);
 int main() {
+    vector<Interval> intervals(3);
+
     intervals.push_back(Interval(15,20));
     intervals.push_back(Interval(25,30));
 

@@ -22,6 +22,11 @@ void swap(int &a, int &b){
     b = a-b;
     a = a-b;
 }
+void swaplists(ListNode* &a, ListNode* &b) {
+    auto tmp = a;
+    a = b;
+    b = tmp;
+}
 int SizeofList(ListNode *head, ListNode *tail) {
     int cnt=0;
     while(head!=tail) { head = head->next; cnt++; }
@@ -77,7 +82,10 @@ public:
                 ListNode *l2 = l1;
                 int l2_size=0;
                 int cnt = sortsize;
+                if(l1->val > l2->val)
+                    swaplists(l1, l2);
                 while( cnt--) { if(!l2) break; l2 = l2->next; l2_size++; };
+                
                 if(l2) {
                 	ListNode *tmp = l2->next;
                 	MergeSortList(l1,l2,l2_size);

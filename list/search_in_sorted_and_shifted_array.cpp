@@ -58,7 +58,7 @@ int test_vector1[7][9] = {
     {6,7,8,9,1,2,3,4,5}
 };
 int target = 1;
-int main2(){
+int main(){
     
     for(int i = 0; i< 7;i++){
         vector<int> test(9);
