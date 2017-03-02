@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A14B06AC1E5333B300FF5130 /* reverse_a_linked_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A14B06AB1E5333B300FF5130 /* reverse_a_linked_list.cpp */; };
-		A14B06BB1E551C2900FF5130 /* Minimum_arrow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A14B06BA1E551BC800FF5130 /* Minimum_arrow.cpp */; };
+		A14B072C1E5D8A1900FF5130 /* graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A14B072A1E5D8A1900FF5130 /* graph.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +43,14 @@
 		A14B06B51E54F75D00FF5130 /* Meeting_Room_Problem1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Meeting_Room_Problem1.cpp; path = "sorting stls/Meeting_Room_Problem1.cpp"; sourceTree = "<group>"; };
 		A14B06B81E54FDCC00FF5130 /* Min_Meeting_Rooms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Min_Meeting_Rooms.cpp; path = "sorting stls/Min_Meeting_Rooms.cpp"; sourceTree = "<group>"; };
 		A14B06BA1E551BC800FF5130 /* Minimum_arrow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Minimum_arrow.cpp; path = greedy/Minimum_arrow.cpp; sourceTree = "<group>"; };
+		A14B07151E5A077F00FF5130 /* LinkedList_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LinkedList_main.cpp; path = list/LinkedList_main.cpp; sourceTree = "<group>"; };
+		A14B07171E5A07A500FF5130 /* linkedlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = linkedlist.h; path = list/linkedlist.h; sourceTree = "<group>"; };
+		A14B07181E5A135200FF5130 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = list/main.cpp; sourceTree = "<group>"; };
+		A14B071A1E5A378100FF5130 /* reversenumber.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = reversenumber.c; path = ../../../reversenumber.c; sourceTree = "<group>"; };
+		A14B07271E5D644000FF5130 /* lrucache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lrucache.cpp; path = ../../lrucache/lrucache.cpp; sourceTree = "<group>"; };
+		A14B07281E5D644000FF5130 /* lrucache.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = lrucache.hpp; path = ../../lrucache/lrucache.hpp; sourceTree = "<group>"; };
+		A14B072A1E5D8A1900FF5130 /* graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = graph.cpp; path = ../../graphs/graph.cpp; sourceTree = "<group>"; };
+		A14B072B1E5D8A1900FF5130 /* graph.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = graph.hpp; path = ../../graphs/graph.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +76,19 @@
 			children = (
 				A14B06BA1E551BC800FF5130 /* Minimum_arrow.cpp */,
 				A14B06B51E54F75D00FF5130 /* Meeting_Room_Problem1.cpp */,
+				A14B07271E5D644000FF5130 /* lrucache.cpp */,
+				A14B07281E5D644000FF5130 /* lrucache.hpp */,
+				A14B072A1E5D8A1900FF5130 /* graph.cpp */,
+				A14B072B1E5D8A1900FF5130 /* graph.hpp */,
 				A14B06B81E54FDCC00FF5130 /* Min_Meeting_Rooms.cpp */,
 				A14B06AD1E541B0B00FF5130 /* search_rotated_array.cpp */,
 				A14B06AF1E542FB400FF5130 /* search_in_sorted_and_shifted_array.cpp */,
 				A14B06B11E54BC9B00FF5130 /* insertion_sort_list.cpp */,
 				A14B06B31E54D34200FF5130 /* MergeSortList.cpp */,
+				A14B07151E5A077F00FF5130 /* LinkedList_main.cpp */,
+				A14B07181E5A135200FF5130 /* main.cpp */,
+				A14B071A1E5A378100FF5130 /* reversenumber.c */,
+				A14B07171E5A07A500FF5130 /* linkedlist.h */,
 				A14B06A51E5332C700FF5130 /* reverselist */,
 				A14B06831E53324A00FF5130 /* Products */,
 			);
@@ -174,7 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A14B06BB1E551C2900FF5130 /* Minimum_arrow.cpp in Sources */,
+				A14B072C1E5D8A1900FF5130 /* graph.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +339,7 @@
 				A14B068B1E53324A00FF5130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A14B06A81E5332C700FF5130 /* Build configuration list for PBXNativeTarget "reverselist" */ = {
 			isa = XCConfigurationList;
@@ -331,6 +348,7 @@
 				A14B06AA1E5332C700FF5130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
